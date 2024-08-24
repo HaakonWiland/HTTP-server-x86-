@@ -1,2 +1,11 @@
 # HTTP-server-x86-
-Very simple HTTP server written only in x86 assembly and by the use systemcalls to the Linux kernal. I wrote it in the conext of solving a CTF (Capture the flag) challenge, might clean it up and build on it in the future .
+A very simple HTTP server written entirely in x86 assembly using only systemcalls to the Linux kernal. This project was developed as part of a CTF (Capture the Flag) challenge, and I may clean it up and build upon it in the future.
+
+### Properties:
+- Handles multiple connection.
+- Supports both GET and POST requests with appropriate responses. 
+- Manages multiple network sockets.
+
+### Main limitations:
+- Can only read fixed-length paths
+- Only handles the "200 OK" response case. 
